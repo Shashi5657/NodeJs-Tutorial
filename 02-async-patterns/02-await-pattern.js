@@ -4,8 +4,6 @@ const { readFile, writeFile } = require("fs").promises
 // const readFilePromise = util.promisify(readFile);
 // const writeFilePromise = util.promisify(writeFile);
 
-
-
 const start = async() => {
     try{
         const first = await readFile('./content/first.txt', 'utf-8')
@@ -16,6 +14,7 @@ const start = async() => {
         console.log(err)
     }
 }
+
 
 start();
 
