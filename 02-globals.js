@@ -4,4 +4,4 @@
 // module - info about current module
 // process - info about environment where the program is being executed
 
-console.log(process);
+console.log(require);
