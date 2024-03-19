@@ -1,9 +1,12 @@
-const http = require('http')
+const http = require("http");
 
-const server = http.createServer()
+//using event emitter api
+const server = http.createServer();
 
-server.on('request', (req, res)=> {
-    res.end('Hello There')
-})
+//emitsrequest event
+//listen for it/ respond to it
+server.on("request", (req, res) => {
+  res.end("Hello There!!");
+});
 
-server.listen(5000)
+server.listen(5000);
